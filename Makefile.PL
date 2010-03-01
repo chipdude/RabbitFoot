@@ -20,11 +20,11 @@ requires 'Devel::GlobalDestruction';
 requires 'namespace::clean';
 
 tests 't/*.t';
-author_tests 'xt';
+#author_tests 'xt';
 install_share;
 
 build_requires 'Test::More';
 build_requires 'Test::Exception';
 install_script 'rabbit_foot';
-auto_include;
+#auto_include;
 WriteAll;
