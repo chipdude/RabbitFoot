@@ -11,7 +11,7 @@ use File::ShareDir ();
 
 use RabbitFoot::Channel;
 
-our $VERSION = '1.00';
+our $VERSION = '0.01';
 
 BEGIN {
     for my $method (qw(connect close)) {
