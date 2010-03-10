@@ -1,2 +1,3 @@
 steps = FindVersion, ChangeVersion, CheckChangeLog, DistTest, Commit, Tag, MakeDist
-svk.tagpattern = release-%v
+CheckChangeLog.files = debian/changelog
+git.tagpattern = s51_prealpha_%v
