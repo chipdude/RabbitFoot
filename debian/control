@@ -1,4 +1,4 @@
-Source: librabbitfoot-perl
+Source: libnet-rabbitfoot-perl
 Section: perl
 Priority: optional
 Build-Depends: debhelper (>= 5.0.0)
@@ -7,7 +7,7 @@ Maintainer: Tomas Doran <t0m@state51.co.uk>
 Standards-Version: 3.7.2
 Homepage: http://search.cpan.org/dist/RabbitFoot/
 
-Package: librabbitfoot-perl
+Package: libnet-rabbitfoot-perl
 Architecture: all
 Depends: ${perl:Depends}, ${misc:Depends}, libmoosex-configfromfile-perl, libanyevent-perl, libyaml-syck-perl (>= 0.88), libmoosex-attributehelpers-perl, libfile-sharedir-perl, libconfig-any-perl, liblist-moreutils-perl, libmoose-perl, libmoosex-app-cmd-perl, libcoro-perl, libnet-amqp-perl
 Description: An Asynchronous and single channel Perl AMQP client.
