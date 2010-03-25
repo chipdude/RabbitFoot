@@ -1,3 +1,9 @@
+libnet-rabbitfoot-perl (1.01-1) unstable; urgency=low
+
+  * Upgrade from upstream, + local warning on global destruction fixes
+
+ -- Tomas Doran <t0m@state51.co.uk>  Thi, 25 Mar 2010 13:10:12 +0000
+
 libnet-rabbitfoot-perl (0.02-1) unstable; urgency=low
 
   * Less hacky release.
