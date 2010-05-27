@@ -1,4 +1,10 @@
-libnet-rabbitfoot-perl (1.01-3) unstable; urgency=low
+libnet-rabbitfoot-perl (1.02-1) unstable; urgency=low
+
+  * Fix disconnection issues
+
+ -- Tomas Doran <t0m@state51.co.uk>  Thur, 27 May 2010 16:30:41 +0100
+
+ibnet-rabbitfoot-perl (1.01-3) unstable; urgency=low
 
   * local warning on global destruction fixes (more more)
 
