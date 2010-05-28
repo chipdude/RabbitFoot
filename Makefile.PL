@@ -1,5 +1,5 @@
 use inc::Module::Install;
-require Module::Install::TestBase;
+#require Module::Install::TestBase;
 
 name 'Net-RabbitFoot';
 all_from 'lib/Net/RabbitFoot.pm';
