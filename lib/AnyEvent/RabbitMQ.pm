@@ -438,7 +438,7 @@ sub _push_write {
     if ($self->{verbose}) {
         warn '[C] --> [S] ', Dumper($output);
     }
-
+    $self->{drain_condvar} = AnyEvent->condvar;
     $self->{_handle}->push_write($output->to_raw_frame())
         if $self->{_handle}; # Careful - could have gone (global destruction)
     return;
@@ -466,14 +466,16 @@ sub _check_open {
 
 sub drain_writes {
     my ($self, $timeout) = shift;
-    $self->{drain_condvar} = AnyEvent->condvar;
+    return 1 unless $self->{drain_condvar};
     if ($timeout) {
         $self->{drain_timer} = AnyEvent->timer( after => $timeout, sub {
             $self->{drain_condvar}->croak("Timed out after $timeout");
         });
     }
     $self->{drain_condvar}->recv;
+    delete $self->{drain_condvar};
     delete $self->{drain_timer};
+    return 1;
 }
 
 sub DESTROY {

@@ -64,6 +64,10 @@ sub _do {
     return @responses;
 }
 
+sub drain_writes {
+    shift->{_ar}->drain_writes(@_);
+}
+
 1;
 __END__
 
