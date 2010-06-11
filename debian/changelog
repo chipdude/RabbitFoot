@@ -1,3 +1,9 @@
+libnet-rabbitfoot-perl (1.02-4) unstable; urgency=low
+
+  * Fix another hang bug with write draining support.
+
+ -- Tomas Doran <t0m@state51.co.uk>  Fri, 11 Jun 2010 15:57:00 +0100
+
 libnet-rabbitfoot-perl (1.02-3) unstable; urgency=low
 
   * Fix a hang bug when we cannot connect to Rabbit (e.g. bad username/password)
