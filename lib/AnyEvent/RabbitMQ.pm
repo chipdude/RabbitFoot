@@ -303,7 +303,6 @@ sub close {
          my $channel = $self->{_channels}->{$id}
             or next; # Could have already gone away on global destruction..
          $channel->close(
-         $channels->close(
             on_success => $close_cb,
             on_failure => sub {
                 $close_cb->();
