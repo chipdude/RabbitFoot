@@ -1,3 +1,9 @@
+libnet-rabbitfoot-perl (1.02-1) unstable; urgency=low
+
+  * Extra fixes for global destruction
+
+ -- Tomas Doran <t0m@state51.co.uk>  Tue, 28 Sep 2010 11:29:32 +0100
+
 libnet-rabbitfoot-perl (1.01-3) unstable; urgency=low
 
   * local warning on global destruction fixes (more more)
