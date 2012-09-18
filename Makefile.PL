@@ -8,7 +8,7 @@ requires 'MooseX::App::Cmd';
 requires 'MooseX::ConfigFromFile';
 requires 'Config::Any';
 requires 'List::MoreUtils';
-requires 'AnyEvent::RabbitMQ' => '1.03';
+requires 'AnyEvent::RabbitMQ' => '1.0801';  # github.com/chipdude/AnyEvent-RabbitMQ
 requires 'Coro';
 requires 'Coro::AnyEvent';
 
